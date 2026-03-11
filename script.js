@@ -9,35 +9,36 @@ let employees = [
  {name:"Priya", salary:80000},
  {name:"John", salary:30000}
 ]
-//1)
+//1)Get employees whose salary is greater than 40000.
+
 
 let emp = employees.filter((current,index,total)=>{
     return current.salary > 40000
 })
 console.log("greater than 40000 : ",emp);
 
-//2)
+//2)Find the first employee whose salary is above 70000.
 
 let newemp = employees.find((current,index,total)=>{
     return current.salary > 70000
 })
 console.log("salary is above 70000 : ",newemp);
 
-//3)
+//3)Calculate the total salary of all employees.
 
 let overallsalary = employees.reduce((acc,current,index,total)=>{
     return acc+current.salary
 },0)
 console.log("Total salary: ",overallsalary);
 
-//4)
+//4)Check if any employee salary is below 20000.
 
 let check = employees.some((current,index,total)=>{
     return current.salary < 20000
 })
 console.log("salary is below 20000: ",check);
 
-//5)
+//5)Check if all employees salary are above 20000.
 
 let check1 = employees.every((current,index,total)=>{
     return current.salary > 20000
