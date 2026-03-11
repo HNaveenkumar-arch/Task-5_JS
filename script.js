@@ -209,21 +209,8 @@ console.log(sliceval);
 
 // 2) Extract first 3 sports
 
-let sliceval1 = sports.slice(0,3)
+let sliceval1 = sports.slice(0,3) 
 console.log(sliceval1);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
